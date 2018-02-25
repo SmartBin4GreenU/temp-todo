@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar-right {
+    justify-content: flex-end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-img {
+    position: absolute;
+    background: #333333 url('https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.header > h2 > a {
+    color: #eaeaea;
+    text-transform: uppercase;
+    font-size : 45px;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.navbar li > a {
+    color: #eaeaea;
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+.navbar li > a.active {
+    color: red;
+}
+
+.navbar li > a:hover {
+    color: #ffffff;
+}
+
+.content-title  > h2 {
+    font-size: 75px;
+    color: white;
+}
+
+.content-text > p {
+    font-size: 25px;
+    color: white;
+}
+
+header {
+    min-height: 450px;
+}
+
+.content-text > button {
+    padding: 10px 60px;
+    background: none;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-size: 17px;
+    transition: all 0.35s;
+    animation: move 4s infinite;
+
+}
+
+.content-text > button:hover {
+    color: black;
+    background-color: white;
+}
+
+@keyframes move {
+    0% { margin: 0;}
+    25% { margin: 25px;}
+    50% { margin: 50px;}
+    100% {margin: 0px;}
+}

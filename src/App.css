@@ -1,0 +1,108 @@
+.App {
+    background-color: #f2f2f2;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 80px;
+    padding: 10px;
+    color: white;
+
+}
+
+.App-title {
+    font-size: 1.5em;
+    padding-left: 33px;
+}
+
+.App-content {
+    padding: 30px 40px 60px 40px;
+    font-size: 25px;
+}
+
+
+input[type=text] {
+    width: 40%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+label {
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.row {
+    align-content: center;
+}
+
+.col25 {
+    float: left;
+    width: 15%;
+}
+
+.col75 {
+    float: left;
+    width: 85%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col25, .col75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+button {
+    padding: 14px;
+    margin-left: 9px;
+    display: inline-block;
+    border: 2px solid #223;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: linen;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -10px;
+}
+
+ul li {
+    background-color: linen;
+    border-style: ridge;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+}
