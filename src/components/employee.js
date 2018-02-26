@@ -10,7 +10,7 @@ class Employee extends Component {
     handleValue = (e) => {
         this.setState({[e.target.name]: e.target.value},
             () => {
-                console.log(this.state)
+                // console.log(this.state)
             });
     }
 
