@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import '../App.css';
 
 
 class Temp extends Component {
@@ -12,14 +12,16 @@ class Temp extends Component {
     convertFarenheit = (e) => {
         let c = e.target.value;
         console.log(c);
-        this.setState({celsius: c, farenheit: ((c * 9 / 5) + 32).toFixed(2)});
+        this.setState({celsius: c,
+            farenheit: ((c * 9 / 5) + 32).toFixed(2)});
     }
 
 
     updateFarenheit = (e) => {
         let f = e.target.value;
         console.log(f);
-        this.setState({celsius: ((f - 32) * 5 / 9).toFixed(2), farenheit: f})
+        this.setState({celsius: ((f - 32) * 5 / 9).toFixed(2),
+            farenheit: f})
     }
 
 
@@ -36,7 +38,8 @@ class Temp extends Component {
                             <label htmlFor="temp">Celsius: </label>
                         </div>
                         <div className="col75">
-                            <input type="text" name="celsius" value={this.state.celsius}
+                            <input type="text" name="celsius"
+                                   value={this.state.celsius}
                                    onChange={this.convertFarenheit}/>
                         </div>
                     </div>
@@ -45,7 +48,8 @@ class Temp extends Component {
                             <label htmlFor="temp">Farenheit: </label>
                         </div>
                         <div className="col75">
-                            <input type="text" name="farenheit" value={this.state.farenheit}
+                            <input type="text" name="farenheit"
+                                   value={this.state.farenheit}
                                    onChange={this.updateFarenheit}/>
                         </div>
                     </div>
